@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vO6-Qv-2cd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vO6-Qv-2cd">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -74,7 +74,7 @@
         <!--Host Page-->
         <scene sceneID="mcg-Ba-723">
             <objects>
-                <viewController id="CPU-3R-axz" customClass="hostViewController" customModule="GPSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CPU-3R-axz" customClass="HostViewController" customModule="GPSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dAp-QM-OuW"/>
                         <viewControllerLayoutGuide type="bottom" id="nDt-2n-Y6f"/>
@@ -147,7 +147,7 @@
         <!--Map-->
         <scene sceneID="BT8-fW-pIE">
             <objects>
-                <viewController id="fH0-mg-17E" customClass="mapViewController" customModule="GPSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fH0-mg-17E" customClass="MapViewController" customModule="GPSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lS2-nT-Yt7"/>
                         <viewControllerLayoutGuide type="bottom" id="GeT-Vc-Sdy"/>
@@ -155,20 +155,7 @@
                     <view key="view" contentMode="scaleToFill" id="N5B-tA-xw6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TO BE DONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-h3-VDE">
-                                <rect key="frame" x="251" y="289" width="99" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ZHE-h3-VDE" firstAttribute="leading" secondItem="N5B-tA-xw6" secondAttribute="leadingMargin" id="PSd-zW-Qei"/>
-                            <constraint firstItem="ZHE-h3-VDE" firstAttribute="top" secondItem="lS2-nT-Yt7" secondAttribute="bottom" constant="225" id="VPE-1Q-xOW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZHE-h3-VDE" secondAttribute="trailing" id="lMJ-5h-3Uz"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="WMG-r7-XNg"/>
                 </viewController>

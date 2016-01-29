@@ -8,7 +8,7 @@
 
 import UIKit
 
-class hostViewController: UIViewController, UITextFieldDelegate {
+class HostViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var waitingLabel: UILabel!
     @IBOutlet var connectLabel: UILabel!
