@@ -10,7 +10,9 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
-
+Setup for Postgres locally on Mac OS X
+    * https://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/
+    * rake db:create db:migrate
 * Database creation
 
 * Database initialization
