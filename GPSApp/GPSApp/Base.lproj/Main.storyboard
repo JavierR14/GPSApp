@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vO6-Qv-2cd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vO6-Qv-2cd">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -43,9 +43,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44B-MW-iCr" customClass="GIDSignInButton">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44B-MW-iCr" customClass="GIDSignInButton">
                                 <rect key="frame" x="180" y="120" width="240" height="50"/>
                                 <color key="backgroundColor" red="0.060620755847677232" green="0.61622208721386973" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="RK8-Sd-SI9"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -57,7 +60,9 @@
                             <constraint firstItem="5Th-6R-oBf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RTc-S4-F9u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SdA-lA-b72" secondAttribute="trailing" id="SHL-79-PBn"/>
                             <constraint firstItem="4Co-nd-yAN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SRp-Wn-dFw"/>
+                            <constraint firstItem="44B-MW-iCr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aCJ-yS-MTn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Co-nd-yAN" secondAttribute="trailing" id="dwx-Sv-Z9q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="44B-MW-iCr" secondAttribute="trailing" id="rGQ-Om-Uwv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NrA-Vo-i3I" secondAttribute="trailing" id="wPY-18-3Tw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NrA-Vo-i3I" secondAttribute="bottom" constant="153" id="z3V-PM-dkQ"/>
                         </constraints>

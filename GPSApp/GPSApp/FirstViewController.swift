@@ -20,8 +20,8 @@ class FirstViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDel
         super.viewDidLoad()
         
         // tapping on the view calls the dismissKeyboard function and add this gesture to the view
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        view.addGestureRecognizer(tap)
+        //let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        //view.addGestureRecognizer(tap)
         
         self.userField.delegate = self
         
