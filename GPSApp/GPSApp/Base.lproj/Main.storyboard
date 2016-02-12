@@ -29,12 +29,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter your Display Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdA-lA-b72">
-                                <rect key="frame" x="206" y="226" width="188" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrA-Vo-i3I">
                                 <rect key="frame" x="268" y="417" width="65" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -43,6 +37,16 @@
                                     <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pag-Cf-ARJ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter your Display Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdA-lA-b72">
+                                <rect key="frame" x="206" y="226" width="188" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44B-MW-iCr" customClass="GIDSignInButton">
+                                <rect key="frame" x="180" y="120" width="240" height="50"/>
+                                <color key="backgroundColor" red="0.060620755847677232" green="0.61622208721386973" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -63,6 +67,7 @@
                         <outlet property="errorLabel" destination="4Co-nd-yAN" id="oFX-8J-4K6"/>
                         <outlet property="goButton" destination="NrA-Vo-i3I" id="6Di-em-Fmq"/>
                         <outlet property="inquiryLabel" destination="SdA-lA-b72" id="jPL-4j-PtJ"/>
+                        <outlet property="signInButton" destination="44B-MW-iCr" id="Mes-Qg-iZ8"/>
                         <outlet property="userField" destination="5Th-6R-oBf" id="crk-pw-ap3"/>
                         <segue destination="CPU-3R-axz" kind="show" identifier="validUser" id="ZQl-i0-eYQ"/>
                     </connections>
@@ -113,6 +118,13 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfM-5u-oXD">
+                                <rect key="frame" x="270" y="102" width="60" height="30"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="googleSignOut:" destination="CPU-3R-axz" eventType="touchUpInside" id="TEX-GE-vsE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>

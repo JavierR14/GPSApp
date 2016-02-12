@@ -8,12 +8,13 @@
 
 import UIKit
 
-class FirstViewController: UIViewController, UITextFieldDelegate {
+class FirstViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDelegate {
     
     @IBOutlet var inquiryLabel: UILabel!
     @IBOutlet var userField: UITextField!
     @IBOutlet var errorLabel: UILabel!
     @IBOutlet var goButton: UIButton!
+    @IBOutlet weak var signInButton: GIDSignInButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +27,29 @@ class FirstViewController: UIViewController, UITextFieldDelegate {
         
         // hide the errorLabel initially
         self.errorLabel.hidden = true
+        
+        //set google sign-in delegate
+        GIDSignIn.sharedInstance().uiDelegate = self
     }
-
+    
+    // Stop the UIActivityIndicatorView animation that was started when the user
+    // pressed the Sign In button
+    func signInWillDispatch(signIn: GIDSignIn!, error: NSError!) {
+        //myActivityIndicator.stopAnimating()
+    }
+    
+    // Present a view that prompts the user to sign in with Google
+    func signIn(signIn: GIDSignIn!,
+        presentViewController viewController: UIViewController!) {
+            self.presentViewController(viewController, animated: true, completion: nil)
+    }
+    
+    // Dismiss the "Sign in with Google" view
+    func signIn(signIn: GIDSignIn!,
+        dismissViewController viewController: UIViewController!) {
+            self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

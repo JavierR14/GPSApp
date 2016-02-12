@@ -43,6 +43,10 @@ class HostViewController: UIViewController, UITextFieldDelegate {
         return false
     }
     
+    @IBAction func googleSignOut(sender: AnyObject) {
+        GIDSignIn.sharedInstance().signOut()
+    }
+    
     @IBAction func connect(sender: AnyObject) {
         if (self.connectTextField.text == "anotherone") {
             performSegueWithIdentifier("showMap", sender: sender)
