@@ -86,6 +86,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F2CC5EC1C6FD5CA006592F4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F6BEAD01C54868700F1E258 /* FirstViewController.swift */,
+				5F6BEAFC1C54934000F1E258 /* HostViewController.swift */,
+				5F6BEAFE1C54975200F1E258 /* MapViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5F2CC5ED1C6FD678006592F4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5F6BEAD51C54868700F1E258 /* Assets.xcassets */,
+				5F6BEAD71C54868700F1E258 /* LaunchScreen.storyboard */,
+				0EA040E61C6C2D4400BC0EF9 /* GPSApp-Bridging-Header.h */,
+				5F6BEADA1C54868700F1E258 /* Info.plist */,
+				0EA040D41C6C0BB400BC0EF9 /* GoogleService-Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5F2CC5EE1C6FD920006592F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		5F6BEAC21C54868700F1E258 = {
 			isa = PBXGroup;
 			children = (
@@ -110,16 +139,11 @@
 		5F6BEACD1C54868700F1E258 /* GPSApp */ = {
 			isa = PBXGroup;
 			children = (
+				5F2CC5EE1C6FD920006592F4 /* Models */,
+				5F2CC5EC1C6FD5CA006592F4 /* ViewControllers */,
 				5F6BEACE1C54868700F1E258 /* AppDelegate.swift */,
-				5F6BEAD01C54868700F1E258 /* FirstViewController.swift */,
 				5F6BEAD21C54868700F1E258 /* Main.storyboard */,
-				5F6BEAD51C54868700F1E258 /* Assets.xcassets */,
-				5F6BEAD71C54868700F1E258 /* LaunchScreen.storyboard */,
-				0EA040E61C6C2D4400BC0EF9 /* GPSApp-Bridging-Header.h */,
-				5F6BEADA1C54868700F1E258 /* Info.plist */,
-				0EA040D41C6C0BB400BC0EF9 /* GoogleService-Info.plist */,
-				5F6BEAFC1C54934000F1E258 /* HostViewController.swift */,
-				5F6BEAFE1C54975200F1E258 /* MapViewController.swift */,
+				5F2CC5ED1C6FD678006592F4 /* SupportingFiles */,
 			);
 			path = GPSApp;
 			sourceTree = "<group>";

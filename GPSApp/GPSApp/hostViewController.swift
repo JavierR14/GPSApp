@@ -10,6 +10,8 @@ import UIKit
 
 class HostViewController: UIViewController, UITextFieldDelegate {
 
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     @IBOutlet var waitingLabel: UILabel!
     @IBOutlet var connectLabel: UILabel!
     @IBOutlet var connectTextField: UITextField!
@@ -19,32 +21,29 @@ class HostViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // tapping on the view calls the dismissKeyboard function and add this gesture to the view
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
         
         self.connectTextField.delegate = self
-        
         self.errorLabel.hidden = true;
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func dismissKeyboard() {
         view.endEditing(true)
     }
     
-    // clicking "done" closes the keyboard
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
     }
     
-    @IBAction func googleSignOut(sender: AnyObject) {
+    @IBAction func signOut(sender: AnyObject) {
         GIDSignIn.sharedInstance().signOut()
+        navigationController?.popViewControllerAnimated(true)
     }
     
     @IBAction func connect(sender: AnyObject) {

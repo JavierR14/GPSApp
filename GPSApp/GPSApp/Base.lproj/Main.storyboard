@@ -18,62 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Invalid Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Co-nd-yAN">
-                                <rect key="frame" x="251" y="352" width="98" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="sample" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Th-6R-oBf">
-                                <rect key="frame" x="206" y="277" width="188" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrA-Vo-i3I">
-                                <rect key="frame" x="268" y="417" width="65" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="GO"/>
-                                <connections>
-                                    <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pag-Cf-ARJ"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Enter your Display Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdA-lA-b72">
-                                <rect key="frame" x="206" y="226" width="188" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44B-MW-iCr" customClass="GIDSignInButton">
-                                <rect key="frame" x="180" y="120" width="240" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44B-MW-iCr" customClass="GIDSignInButton">
+                                <rect key="frame" x="20" y="282" width="560" height="50"/>
                                 <color key="backgroundColor" red="0.060620755847677232" green="0.61622208721386973" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="RK8-Sd-SI9"/>
+                                    <constraint firstAttribute="height" constant="50" id="hXi-Ow-wa2"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="5Th-6R-oBf" secondAttribute="trailing" id="348-Vs-swK"/>
-                            <constraint firstItem="NrA-Vo-i3I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Cve-af-3YG"/>
-                            <constraint firstItem="SdA-lA-b72" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Gd0-PH-2xG"/>
-                            <constraint firstItem="5Th-6R-oBf" firstAttribute="top" secondItem="SdA-lA-b72" secondAttribute="bottom" constant="30" id="Msb-GR-QKV"/>
-                            <constraint firstItem="5Th-6R-oBf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RTc-S4-F9u"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SdA-lA-b72" secondAttribute="trailing" id="SHL-79-PBn"/>
-                            <constraint firstItem="4Co-nd-yAN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SRp-Wn-dFw"/>
+                            <constraint firstItem="44B-MW-iCr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="218" id="INR-lt-G4K"/>
                             <constraint firstItem="44B-MW-iCr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aCJ-yS-MTn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="4Co-nd-yAN" secondAttribute="trailing" id="dwx-Sv-Z9q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="44B-MW-iCr" secondAttribute="trailing" id="rGQ-Om-Uwv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NrA-Vo-i3I" secondAttribute="trailing" id="wPY-18-3Tw"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NrA-Vo-i3I" secondAttribute="bottom" constant="153" id="z3V-PM-dkQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Enter Page" id="jKk-bW-3f4"/>
                     <connections>
-                        <outlet property="errorLabel" destination="4Co-nd-yAN" id="oFX-8J-4K6"/>
-                        <outlet property="goButton" destination="NrA-Vo-i3I" id="6Di-em-Fmq"/>
-                        <outlet property="inquiryLabel" destination="SdA-lA-b72" id="jPL-4j-PtJ"/>
-                        <outlet property="signInButton" destination="44B-MW-iCr" id="Mes-Qg-iZ8"/>
-                        <outlet property="userField" destination="5Th-6R-oBf" id="crk-pw-ap3"/>
                         <segue destination="CPU-3R-axz" kind="show" identifier="validUser" id="ZQl-i0-eYQ"/>
                     </connections>
                 </viewController>
@@ -93,46 +54,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Awaiting to be Connected.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flH-tr-5Gc">
-                                <rect key="frame" x="197" y="163" width="206" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awaiting to be Connected.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flH-tr-5Gc">
+                                <rect key="frame" x="20" y="163" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Connect With:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piP-ZK-dKb">
-                                <rect key="frame" x="245" y="367" width="110" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect With:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piP-ZK-dKb">
+                                <rect key="frame" x="20" y="367" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="otherusername" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qn-XI-bXb">
-                                <rect key="frame" x="193" y="425" width="215" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="otherusername" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2qn-XI-bXb">
+                                <rect key="frame" x="20" y="425" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5N-Ab-qlm">
-                                <rect key="frame" x="258" y="485" width="85" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5N-Ab-qlm">
+                                <rect key="frame" x="20" y="485" width="560" height="30"/>
                                 <state key="normal" title="Connect"/>
                                 <connections>
                                     <action selector="connect:" destination="CPU-3R-axz" eventType="touchUpInside" id="uo1-QY-aJC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="User does not exist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-Fh-NV0">
-                                <rect key="frame" x="226" y="272" width="148" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User does not exist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-Fh-NV0">
+                                <rect key="frame" x="20" y="272" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfM-5u-oXD">
-                                <rect key="frame" x="270" y="102" width="60" height="30"/>
-                                <state key="normal" title="Sign Out"/>
-                                <connections>
-                                    <action selector="googleSignOut:" destination="CPU-3R-axz" eventType="touchUpInside" id="TEX-GE-vsE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="piP-ZK-dKb" firstAttribute="top" secondItem="CIU-Fh-NV0" secondAttribute="bottom" constant="74" id="5Cf-Uo-x6H"/>
+                            <constraint firstItem="2qn-XI-bXb" firstAttribute="top" secondItem="piP-ZK-dKb" secondAttribute="bottom" constant="37" id="9BF-uf-O3r"/>
+                            <constraint firstItem="f5N-Ab-qlm" firstAttribute="top" secondItem="2qn-XI-bXb" secondAttribute="bottom" constant="30" id="H0S-Pq-JAR"/>
                             <constraint firstItem="2qn-XI-bXb" firstAttribute="leading" secondItem="xm1-QE-c8S" secondAttribute="leadingMargin" id="PT2-ah-bst"/>
                             <constraint firstAttribute="trailingMargin" secondItem="flH-tr-5Gc" secondAttribute="trailing" id="UFd-Lg-74R"/>
                             <constraint firstItem="f5N-Ab-qlm" firstAttribute="leading" secondItem="xm1-QE-c8S" secondAttribute="leadingMargin" id="YCh-rW-dGg"/>
@@ -147,7 +104,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="CIU-Fh-NV0" secondAttribute="trailing" id="w30-ZR-v2M"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Host Page" id="UPH-qB-S1z"/>
+                    <navigationItem key="navigationItem" title="Host Page" id="UPH-qB-S1z">
+                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="2lo-gI-pI8">
+                            <connections>
+                                <action selector="signOut:" destination="CPU-3R-axz" id="0nL-uO-A21"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="connectButton" destination="f5N-Ab-qlm" id="jZs-yH-j38"/>
                         <outlet property="connectLabel" destination="piP-ZK-dKb" id="Wzr-nV-VMQ"/>
