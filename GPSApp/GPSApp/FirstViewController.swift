@@ -34,16 +34,20 @@ class FirstViewController: UIViewController, GIDSignInUIDelegate {
                 let userInfo:Dictionary<String,AnyObject!> =
                 notification.userInfo as! Dictionary<String,AnyObject!>
                 
-                var parameters = [String: AnyObject]? ()
+                var parameters = [String: String?] ()
                 parameters = [
-                    "name": userInfo["name"]!,
-                    "image": userInfo["image"]!,
-                    "email": userInfo["email"]!,
-                    "google_id": userInfo["google_id"]!
+                    "name": userInfo["name"] as? String,
+                    "image": userInfo["image"] as? String,
+                    "email": userInfo["email"] as? String,
+                    "google_id": userInfo["google_id"] as? String
                 ]
                 
+                print(parameters["name"])
+//                    ", " + parameters!["image"] +
+//                    ", " + parameters!["email"] + ", " + parameters!["google_id"])
+                
                 // TODO: Connect and push info to a server and receieve a Auth token to be saved locally
-                performSegueWithIdentifier("validUser", sender: nil)
+                performSegueWithIdentifier("showHost", sender: nil)
             }
         }
     }
