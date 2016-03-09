@@ -50,7 +50,7 @@ class FirstViewController: UIViewController, GIDSignInUIDelegate {
                     "last_name": google_parameters["name"]!!
                 ]
                 
-                Alamofire.request(.POST, "gpsapp-master.herokuapp.com/api/signin", parameters: parameters)
+                Alamofire.request(.POST, "https://gpsapp-master.herokuapp.com/api/signin", parameters: parameters)
                     .responseJSON { response in
                         debugPrint(response)
                     }
