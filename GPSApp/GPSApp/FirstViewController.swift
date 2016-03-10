@@ -43,11 +43,10 @@ class FirstViewController: UIViewController, GIDSignInUIDelegate {
                     "google_id": userInfo["google_id"] as? String
                 ]
                 
-                //print(parameters["name"]!! + " " + parameters["image"]!! + " " + parameters["email"]!! + " " + parameters["google_id"]!!)
                 let parameters = [
                     "email" : google_parameters["email"]!!,
-                    "first_name": google_parameters["name"]!!,
-                    "last_name": google_parameters["name"]!!
+                    "name": google_parameters["name"]!!,
+                    "image": google_parameters["image"]!!
                 ]
                 
                 Alamofire.request(.POST, "https://gpsapp-master.herokuapp.com/api/signin", parameters: parameters)
