@@ -72,6 +72,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
         GIDSignIn.sharedInstance().delegate = self
     }
+    
+    func signOut() {
+        GIDSignIn.sharedInstance().signOut()
+        DownloadManager.sharedInstance.deleteInfo()
+        
+        //showLogin()
+    }
 
 }
 

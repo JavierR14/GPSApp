@@ -35,25 +35,17 @@ class FirstViewController: UIViewController, GIDSignInUIDelegate {
                 let userInfo:Dictionary<String,AnyObject!> =
                 notification.userInfo as! Dictionary<String,AnyObject!>
                 
-                var google_parameters = [String: String?] ()
-                google_parameters = [
-                    "name": userInfo["name"] as? String,
-                    "image": userInfo["image"] as? String,
-                    "email": userInfo["email"] as? String,
-                    "google_id": userInfo["google_id"] as? String
+                var parameters = [String: AnyObject]? ()
+                parameters = [
+                    "name": userInfo["name"]!,
+                    "image": userInfo["image"]!,
+                    "email": userInfo["email"]!,
+                    "google_id": userInfo["google_id"]!
                 ]
                 
-                let parameters = [
-                    "email" : google_parameters["email"]!!,
-                    "name": google_parameters["name"]!!,
-                    "image": google_parameters["image"]!!
-                ]
+                DownloadManager.sharedInstance.registerUser(parameters!)
                 
-                Alamofire.request(.POST, "https://gpsapp-master.herokuapp.com/api/signin", parameters: parameters)
-                    .responseJSON { response in
-                        debugPrint(response)
-                    }
-            
+
                 performSegueWithIdentifier("showHost", sender: nil)
             }
         }
