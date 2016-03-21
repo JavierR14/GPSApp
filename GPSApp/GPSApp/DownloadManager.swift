@@ -45,7 +45,6 @@ class DownloadManager {
     func postLocation (var dictionary: [String : AnyObject]) {
         let serverUrl : String = "https://gpsapp-master.herokuapp.com/api/post_location"
         dictionary["auth_token"] = self.token
-        print(self.token)
         Alamofire.request(.POST, serverUrl, parameters: dictionary, encoding: .JSON)
     }
     
