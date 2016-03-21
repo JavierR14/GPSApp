@@ -55,5 +55,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>GPSApp would like to use your location.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>GPSApp would like to use your location.</string>
+	<key>privacy - location usage description</key>
+	<string>GPSApp would like to use your location.</string>
 </dict>
 </plist>

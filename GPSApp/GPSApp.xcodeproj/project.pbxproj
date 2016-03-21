@@ -50,10 +50,10 @@
 		5F6BEADA1C54868700F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6BEADF1C54868800F1E258 /* GPSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6BEAE31C54868800F1E258 /* GPSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSAppTests.swift; sourceTree = "<group>"; };
-		5F6BEAE51C54868800F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6BEAE51C54868800F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GPSAppTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		5F6BEAEA1C54868800F1E258 /* GPSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6BEAEE1C54868800F1E258 /* GPSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSAppUITests.swift; sourceTree = "<group>"; };
-		5F6BEAF01C54868800F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6BEAF01C54868800F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GPSAppUITests/Info.plist; sourceTree = SOURCE_ROOT; };
 		5F6BEAFC1C54934000F1E258 /* HostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
 		5F6BEAFE1C54975200F1E258 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5FE0FF161C8FC75D00BA78B4 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
@@ -154,9 +154,10 @@
 		5F6BEAE21C54868800F1E258 /* GPSAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				5F6BEAF01C54868800F1E258 /* Info.plist */,
+				5F6BEAE51C54868800F1E258 /* Info.plist */,
 				5F6BEAED1C54868800F1E258 /* GPSAppUITests */,
 				5F6BEAE31C54868800F1E258 /* GPSAppTests.swift */,
-				5F6BEAE51C54868800F1E258 /* Info.plist */,
 			);
 			path = GPSAppTests;
 			sourceTree = "<group>";
@@ -165,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				5F6BEAEE1C54868800F1E258 /* GPSAppUITests.swift */,
-				5F6BEAF01C54868800F1E258 /* Info.plist */,
 			);
 			name = GPSAppUITests;
 			path = ../GPSAppUITests;
