@@ -10,7 +10,7 @@
 		015F2C2892681DD3E6AAB05B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09194EDF03497D11AA15D2C /* Pods.framework */; };
 		0EA040D51C6C0BB400BC0EF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EA040D41C6C0BB400BC0EF9 /* GoogleService-Info.plist */; };
 		5F6BEACF1C54868700F1E258 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BEACE1C54868700F1E258 /* AppDelegate.swift */; };
-		5F6BEAD11C54868700F1E258 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BEAD01C54868700F1E258 /* FirstViewController.swift */; };
+		5F6BEAD11C54868700F1E258 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6BEAD01C54868700F1E258 /* LoginViewController.swift */; };
 		5F6BEAD41C54868700F1E258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6BEAD21C54868700F1E258 /* Main.storyboard */; };
 		5F6BEAD61C54868700F1E258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6BEAD51C54868700F1E258 /* Assets.xcassets */; };
 		5F6BEAD91C54868700F1E258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6BEAD71C54868700F1E258 /* LaunchScreen.storyboard */; };
@@ -43,17 +43,17 @@
 		0EA040E61C6C2D4400BC0EF9 /* GPSApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GPSApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		5F6BEACB1C54868700F1E258 /* GPSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6BEACE1C54868700F1E258 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F6BEAD01C54868700F1E258 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		5F6BEAD01C54868700F1E258 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5F6BEAD31C54868700F1E258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F6BEAD51C54868700F1E258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F6BEAD81C54868700F1E258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F6BEADA1C54868700F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6BEADF1C54868800F1E258 /* GPSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6BEAE31C54868800F1E258 /* GPSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSAppTests.swift; sourceTree = "<group>"; };
-		5F6BEAE51C54868800F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GPSAppTests/Info.plist; sourceTree = SOURCE_ROOT; };
+		5F6BEAE51C54868800F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6BEAEA1C54868800F1E258 /* GPSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6BEAEE1C54868800F1E258 /* GPSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSAppUITests.swift; sourceTree = "<group>"; };
-		5F6BEAF01C54868800F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GPSAppUITests/Info.plist; sourceTree = SOURCE_ROOT; };
+		5F6BEAF01C54868800F1E258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6BEAFC1C54934000F1E258 /* HostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostViewController.swift; sourceTree = "<group>"; };
 		5F6BEAFE1C54975200F1E258 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5FE0FF161C8FC75D00BA78B4 /* DownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		5F2CC5EC1C6FD5CA006592F4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F6BEAD01C54868700F1E258 /* FirstViewController.swift */,
+				5F6BEAD01C54868700F1E258 /* LoginViewController.swift */,
 				5F6BEAFC1C54934000F1E258 /* HostViewController.swift */,
 				5F6BEAFE1C54975200F1E258 /* MapViewController.swift */,
 			);
@@ -154,10 +154,9 @@
 		5F6BEAE21C54868800F1E258 /* GPSAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				5F6BEAF01C54868800F1E258 /* Info.plist */,
-				5F6BEAE51C54868800F1E258 /* Info.plist */,
 				5F6BEAED1C54868800F1E258 /* GPSAppUITests */,
 				5F6BEAE31C54868800F1E258 /* GPSAppTests.swift */,
+				5F6BEAE51C54868800F1E258 /* Info.plist */,
 			);
 			path = GPSAppTests;
 			sourceTree = "<group>";
@@ -166,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				5F6BEAEE1C54868800F1E258 /* GPSAppUITests.swift */,
+				5F6BEAF01C54868800F1E258 /* Info.plist */,
 			);
 			name = GPSAppUITests;
 			path = ../GPSAppUITests;
@@ -371,7 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F6BEAD11C54868700F1E258 /* FirstViewController.swift in Sources */,
+				5F6BEAD11C54868700F1E258 /* LoginViewController.swift in Sources */,
 				5FE0FF171C8FC75D00BA78B4 /* DownloadManager.swift in Sources */,
 				5F6BEAFD1C54934000F1E258 /* HostViewController.swift in Sources */,
 				5F6BEACF1C54868700F1E258 /* AppDelegate.swift in Sources */,

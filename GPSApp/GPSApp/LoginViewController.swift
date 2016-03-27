@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class FirstViewController: UIViewController, GIDSignInUIDelegate {
+class LoginViewController: UIViewController, GIDSignInUIDelegate {
     
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet var signOutButton: UIButton!
@@ -46,7 +46,7 @@ class FirstViewController: UIViewController, GIDSignInUIDelegate {
                 DownloadManager.sharedInstance.registerUser(parameters!)
                 
 
-                performSegueWithIdentifier("showHost", sender: nil)
+                //performSegueWithIdentifier("showHost", sender: nil)
             }
         }
     }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vO6-Qv-2cd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aXf-q3-Q8x">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -41,7 +41,7 @@
                                     <action selector="connect:" destination="CPU-3R-axz" eventType="touchUpInside" id="uo1-QY-aJC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="User does not exist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-Fh-NV0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User does not exist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-Fh-NV0">
                                 <rect key="frame" x="20" y="272" width="560" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HdJ-Yu-CO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1809" y="349"/>
+            <point key="canvasLocation" x="2621" y="349"/>
         </scene>
         <!--Map-->
         <scene sceneID="BT8-fW-pIE">
@@ -104,30 +104,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTF-bi-PR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2478" y="349"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EbF-Dl-7gM">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vO6-Qv-2cd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xin-QX-XRM">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="jcT-si-UbN" kind="relationship" relationship="rootViewController" id="W25-FC-0CO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6TT-E9-5wp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="430" y="349"/>
+            <point key="canvasLocation" x="3290" y="349"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="xrr-HP-6Qy">
             <objects>
-                <viewController id="jcT-si-UbN" customClass="FirstViewController" customModule="GPSApp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="jcT-si-UbN" customClass="LoginViewController" customModule="GPSApp" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kWc-RV-ZzR"/>
                         <viewControllerLayoutGuide type="bottom" id="SLE-Ti-Yua"/>
@@ -136,11 +118,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLX-fy-ffq" customClass="GIDSignInButton">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HLX-fy-ffq" customClass="GIDSignInButton">
                                 <rect key="frame" x="20" y="248" width="560" height="104"/>
                                 <color key="backgroundColor" red="0.78223167540000005" green="0.76484395380000003" blue="0.76531464189999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="trackt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRe-L4-ONG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="trackt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRe-L4-ONG">
                                 <rect key="frame" x="20" y="72" width="560" height="168"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="168" id="fRx-wg-dlq"/>
@@ -180,13 +162,28 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="kU3-YU-UK0"/>
-                    <connections>
-                        <segue destination="CPU-3R-axz" kind="show" identifier="showHost" id="owa-lp-Aat"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A9f-gk-T0R" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1132" y="349"/>
+            <point key="canvasLocation" x="2621" y="-301"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1ew-da-ZtX">
+            <objects>
+                <navigationController storyboardIdentifier="NavViewController" automaticallyAdjustsScrollViewInsets="NO" id="aXf-q3-Q8x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CiA-4s-d2F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CPU-3R-axz" kind="relationship" relationship="rootViewController" id="3R8-xc-kUV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXv-n9-jyb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1809" y="349"/>
         </scene>
     </scenes>
 </document>

@@ -13,10 +13,16 @@ import GoogleMaps
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
+    
+    let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         //Google MAPS API
         GMSServices.provideAPIKey("AIzaSyCeUbLHWh4KwOBbPn9Jfp5FLJHxqRkcnrU")
+        
+        if (DownloadManager.sharedInstance.token == "") {
+            showLogin()
+        }
         
         setUpGoogleSignIn()
         
@@ -77,8 +83,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().signOut()
         DownloadManager.sharedInstance.deleteInfo()
         
-        //showLogin()
+        showLogin()
+    }
+    
+    func showHostScreen () {
+        let HostViewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NavViewController") as UIViewController
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = HostViewController
+        self.window?.makeKeyAndVisible()
     }
 
+    func showLogin(){
+        let LoginViewController : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("LoginViewController") as UIViewController
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window?.rootViewController = LoginViewController
+        self.window?.makeKeyAndVisible()
+    }
 }
 

@@ -56,6 +56,8 @@ class DownloadManager {
         let data = NSKeyedArchiver.archivedDataWithRootObject(userInfo)
         NSUserDefaults.standardUserDefaults().setObject(data, forKey: "userInfo")
         NSUserDefaults.standardUserDefaults().synchronize()
+        
+        self.appDelegate.showHostScreen()
     }
     
     func deleteInfo () {

@@ -9,8 +9,6 @@
 import UIKit
 
 class HostViewController: UIViewController, UITextFieldDelegate {
-
-    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     @IBOutlet var waitingLabel: UILabel!
     @IBOutlet var connectLabel: UILabel!
@@ -42,8 +40,7 @@ class HostViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func signOut(sender: AnyObject) {
-        GIDSignIn.sharedInstance().signOut()
-        navigationController?.popViewControllerAnimated(true)
+        DownloadManager.sharedInstance.signOut()
     }
     
     @IBAction func connect(sender: AnyObject) {
