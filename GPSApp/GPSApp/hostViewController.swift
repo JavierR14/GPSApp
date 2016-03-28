@@ -9,7 +9,7 @@
 import UIKit
 
 class HostViewController: UIViewController, UITextFieldDelegate {
-
+        
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     @IBOutlet var waitingLabel: UILabel!
@@ -27,7 +27,7 @@ class HostViewController: UIViewController, UITextFieldDelegate {
         self.connectTextField.delegate = self
         self.errorLabel.hidden = true;
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
