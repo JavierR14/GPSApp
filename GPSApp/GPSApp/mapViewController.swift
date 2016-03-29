@@ -16,7 +16,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: GMSCameraPosition.cameraWithLatitude(43.4784140, longitude: -80.5226360, zoom: 16))
     let marker = GMSMarker()
-    var userImage = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +24,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         self.view = mapView
         
         self.mapView.myLocationEnabled = false
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2DMake(43.4784140, -80.5226360)
-//        marker.title = "Sydney"
-//        marker.snippet = "Australia"
-//        marker.map = mapView
-        
         
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -38,11 +31,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         
-        
-        Alamofire.request(.GET, "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/s150/photo.jpg").response() {
-            (_, _, data, _) in
-            self.userImage = UIImage(data: data! )!
-        }
+        DownloadManager.sharedInstance.getUserImage("https://lh6.googleusercontent.com/-qIRjZyZRZ_o/AAAAAAAAAAI/AAAAAAAAL28/aLi5Ir_do60/s150/photo.jpg")
+        DownloadManager.sharedInstance.getETA(["origins": "Toronto", "destinations": "Montreal"])
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -57,7 +47,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         mapView.animateToLocation(position)
         self.marker.position = position
         self.marker.map = self.mapView
-        self.marker.icon = self.userImage
+        let imageView = UIImageView(image: DownloadManager.sharedInstance.userImage);
+        let screenSize: CGRect = UIScreen.mainScreen().bounds
+        imageView.frame = CGRectMake(0,0, screenSize.height * 0.1, 20)
+        self.marker.icon = imageView.image
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {

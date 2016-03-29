@@ -14,6 +14,7 @@ class DownloadManager {
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     var headers = ["Content-Type" : "application/json" ,"Authentication-Token": ""]
     var token :String
+    var userImage : UIImage
     
     init () {
         if let data = NSUserDefaults.standardUserDefaults().objectForKey("userInfo") as? NSData {
@@ -22,6 +23,7 @@ class DownloadManager {
         } else {
             self.token = ""
         }
+        userImage = UIImage()
     }
     
     // Push Google Data to Server and retrieve the token
@@ -39,6 +41,23 @@ class DownloadManager {
                
                 self.saveInfo(userInfo)
             }
+        }
+    }
+    
+    func getUserImage (imageUrl: String) {
+        Alamofire.request(.GET, imageUrl).response() {
+            (_, _, data, _) in
+            self.userImage = UIImage(data: data!)!
+        }
+    }
+    
+    func getETA (var dictionary: [String : AnyObject]) {
+        //https://developers.google.com/maps/documentation/distance-matrix/intro#Audience
+        dictionary["key"] = "AIzaSyD74jnAmeyuB_uAYvTJLAi3Du7Ygku-urU"
+        let serverUrl : String = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=\(dictionary["origins"])&destinations=\(dictionary["destinations"])&key=AIzaSyCIftUB6bTESOT82zyCBcMd02lK4mY-6D4"
+        Alamofire.request(.GET, serverUrl, parameters: nil, encoding: .JSON).responseString {
+            response in
+            print(response)
         }
     }
     
