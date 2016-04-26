@@ -1,4 +1,6 @@
-#GPSApp
+#Trackt
+
+Link to Trackt Server Repo: https://github.com/JavierR14/GpsApp-Server
 
 #How the Google Maps API was installed using Cocoapods:
 - Step 1: ran 'gem install cocoapods' ('sudo gem install cocoapods' if you've installed rvm with sudo)
